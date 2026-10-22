@@ -20,7 +20,7 @@ outputs:
 runtime:
   kind: docker
   # Filled in by the release workflow with the pushed image's digest.
-  image: ghcr.io/osintverse-community/urx@sha256:0000000000000000000000000000000000000000000000000000000000000000
+  image: ghcr.io/osintverse-community/urx@sha256:05d645c11e2beffd9d92d603b44f5ecf1f797dc5f54b0669ba738a32deefae50
   platforms: [linux/amd64, linux/arm64]
   command: ["urx", "{domain}", "-f", "jsonl", "--no-progress", "--no-color", "--no-cache", "--exclude-robots", "--exclude-sitemap"]
   output_format: jsonl
